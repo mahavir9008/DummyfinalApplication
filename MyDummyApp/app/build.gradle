@@ -23,9 +23,9 @@ android {
         println "Build info: $variant.buildType"
         if (variant.buildType.name=="release") {
             println "Release mode"
-            variant.outputFile = new File("/Users/shubhendusharma/Documents/dummyapk", "app" + defaultConfig.versionName + ".apk")
+            variant.outputFile = new File("/Applications/dummyapk", "app" + defaultConfig.versionName + ".apk")
         } else {
-            variant.outputFile = new File("/Users/shubhendusharma/Documents/dummyapk", "app_DEBUG_" + defaultConfig.versionName + ".apk")
+            variant.outputFile = new File("/Applications/dummyapk", "app_DEBUG_" + defaultConfig.versionName + ".apk")
         }
     }
 }
